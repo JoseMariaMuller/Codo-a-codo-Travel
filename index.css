@@ -1,0 +1,320 @@
+/*body {
+    background-color: aqua;
+    margin: 0;
+}*/
+body {
+    padding: 1em;
+    background-image: url(https://images.unsplash.com/photo-1713709165246-255cea23bb6d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    background-position: center;
+}
+
+header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+.portada-background-image {
+    /*background-image: url('img/Portada.jpg'); 
+    background-size: cover; 
+    background-position: 65% 35%; 
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0) ;*/
+    padding: 10px;
+    height: 200px;
+
+}
+.logo {
+    
+    width: 125px; 
+    height: 125px; 
+    border-radius: 50%; /* Convierte el contenedor en un círculo */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: white; 
+    overflow: hidden; /* Oculta cualquier parte de la imagen que esté fuera del círculo */
+    margin-right: 20px; 
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.8); 
+}
+
+.logo img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* Escala la imagen para que se ajuste dentro del contenedor manteniendo su relación de aspecto */
+    border-radius: 50%; 
+}
+
+
+
+#botonera ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+#botonera ul li {
+    padding: 5px;
+   
+}
+
+
+#botonera ul li:hover{
+    transform: scale(1.1, 1.3);
+    /*background-color: aqua;
+    border-radius: 20px;*/
+}
+
+.link {
+    display: block;
+    color: blue;
+    /*border: 1px solid white;*/
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 2px;
+    width: 150px;
+    margin-right: 10px; /* Ajusta el margen derecho de los botones */
+    position: relative; /* Añadido para posicionar los pseudo-elementos */
+}
+
+.link::before, 
+.link::after {
+    content: "";
+    position: absolute; /* Posiciona los pseudo-elementos relativos al enlace */
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transform: scaleX(0);
+    transition: all 0.7s ease;
+}
+
+.link::before {
+    top: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+.link::after {
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+}
+
+.link:hover::before,
+.link:hover::after {
+    /*background-color: blue;*/
+    transform: scaleX(1);
+
+}
+
+.home {
+
+    /*background-image: url('img/home2.jpg'); 
+    background-size: cover; 
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.75) ;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+    max-width: 100%; 
+    height: 100vh;
+  
+} 
+.text-overlay {
+    position: relative;
+    max-width: 80%; 
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.text-overlay h3 {
+    font-size: 4vw; 
+    margin-bottom: 20px;
+    color: aqua;
+    text-decoration: underline;/*aca para cambiar el color*/
+}
+
+.text-overlay p {
+    font-size: 1.6vw; 
+    line-height: 1.2;
+}
+footer {
+    /* background-image: url(img/home.jpg);
+    background-size: cover;
+    background-position: center;*/
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aqua;
+    
+ 
+}
+div i {
+    color: white;
+    font-size: 1.5vw;
+    padding: 5px;
+    margin-right: 3px;
+    
+}
+
+h1 {
+    color:black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; 
+}
+.Formulario {
+    height: 900px;
+    padding: 50px;
+}
+.container {
+    background-image: url('img/landscape-7567_512.gif'); 
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    margin: 50px auto;
+    padding: 50px;
+    width: 300px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    color: black;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="date"],textarea,select{
+    background-color: #333333;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #e5e5e5;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+select {
+    margin-bottom: 5px;
+}
+
+
+button[type="submit"] {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: aqua;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .text-overlay h3 {
+        font-size: 4vw; 
+    }
+
+    .text-overlay p {
+        font-size: 2vw; 
+    }
+}
+@media screen and (max-width: 950px) {
+    header {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;  
+    }
+    footer i {
+        font-size: 3vw;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+    footer i {
+        font-size: 3vw;
+    }
+    .text-overlay p {
+        font-size: 2.5vw; 
+    }
+}
+@media screen and (max-width: 800px) {
+    #botonera ul li a{
+        
+        width: 100%; 
+    }
+    footer i {
+        font-size: 3vw;
+    }
+    footer p {
+        font-size: 2vw;
+    }
+    .text-overlay p {
+        font-size: 2.5vw; 
+    }
+    
+}
+@media (min-width: 140px) and (max-width: 460px) {
+    #botonera ul {
+        flex-direction: column;
+        align-items: center; 
+    }
+    #botonera ul li {
+        margin-bottom: 10px;
+    }
+    .container {
+        width: 80%; 
+        margin: 0 auto; 
+        margin-right: 10px;
+    }
+    .form-group label {
+        font-size: 16px; /
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    textarea,
+    select {
+    width: 100%; 
+    margin-bottom: 10px; 
+    }
+    button[type="submit"] {
+    width: 100%; 
+    }
+    .text-overlay p {
+        font-size: 3vw; 
+    }
+}

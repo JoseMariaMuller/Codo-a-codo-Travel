@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <title>Codo a Codo Travel</title>
+   
+    <link rel="stylesheet" href="index.css">
+    
+    <script src="https://kit.fontawesome.com/7d13fbcc63.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="portada-background-image">
+       
+        <div class="logo">
+            <a href="index.html"><img src="./img/Logotravel.png" alt="Logo de la Agencia"></a>
+        </div>
+        <nav id="botonera">
+            <ul>
+                <li><a href="./index.html" class="link">Inicio</a></li>
+                <li><a href="./viajes.html" class="link">Viajes</a></li>
+                <li><a href="./sucursales.html" class="link">Sucursales</a></li>
+                <li><a href="./formulario.html" class="link">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <video src="./img/video.mp4" autoplay muted loop></video>
+    <main class="Formulario">
+        <div class="container">
+            <h1>Ingrese su Consulta</h1>
+            <form>
+                
+                <div class="form-group">
+                    <label for="name">Nombre y apellido</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="cumple">Fecha de nacimiento</label>
+                    <input type="date" id="cumple" name="cumple" required>
+                </div>
+                <div>
+                <label>Genero</label>
+                    <input type="radio" name="genero" value="Hombre" checked >Hombre
+                    <input type="radio" name="genero" value="Mujer" >Mujer
+                    <input type="radio" name="genero" value="Otro" >Otro
+                </div>
+                <div class="form-group">
+                    <label for="pais">País</label>
+                    <select id="pais" name="pais" required>
+                        <option value="" disabled selected>Seleccione su país</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Ecuador">Ecuador</option>
+                    </select>
+                </div>    
+                <div>
+                <textarea name="comentario" id="comentario" cols="38" rows="3" class="form-control" placeholder="Escriba aqui su comentario"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Codo a Codo Travel. Todos los derechos reservados.</p>
+        <div>
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter fa-bounce" style="color: white;"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-bounce" style="color: #74C0FC;"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram fa-bounce" style="color: #f0ff1f;"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

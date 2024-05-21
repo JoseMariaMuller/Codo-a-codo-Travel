@@ -1,0 +1,131 @@
+
+body {
+    padding: 1%;
+    align-items: center;
+    background-image: url(https://images.unsplash.com/photo-1713709165246-255cea23bb6d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    background-position: center;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+
+.contenedor img {
+    height: 200px;
+    max-width: 200px;
+    border-radius: 50%;
+    border: 2px solid lightcyan;
+    opacity: 9;
+}
+
+
+
+.texto {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 300%;
+    margin: 5%;
+
+}
+
+.texto1 {
+    text-align: left;
+    font-family: "Zeyada", cursive;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 100%;
+
+}
+
+.texto2 {
+    text-align: left;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 100%;
+
+}
+
+#mt_h2 {
+    color: white;
+    padding: 0px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 3rem;
+    font-style: normal;
+    font-size: 2rem;
+    padding: 0px;
+}
+
+
+
+.sucu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+    height: auto;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: blue;
+    background: rgba(255, 255, 255, .25);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
+    flex-wrap: wrap;
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:active {
+        text-decoration: underline;
+    }
+
+    a {
+        color: blue
+    }
+
+}
+
+.sucu:hover {
+    background: linear-gradient(90deg, black, #022a3c) fixed;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    font-size: 1.5rem;
+    box-shadow: 0px 0px 11px 5px #000000;
+
+    a {
+        color: white;
+    }
+}
+
+.sucu_datos {
+    margin: 1rem;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dato {
+    font-size: 60%;
+}
