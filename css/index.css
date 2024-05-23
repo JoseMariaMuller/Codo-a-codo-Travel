@@ -1,7 +1,3 @@
-/*body {
-    background-color: aqua;
-    margin: 0;
-}*/
 body {
     padding: 1em;
     background-image: url(https://images.unsplash.com/photo-1713709165246-255cea23bb6d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -9,7 +5,9 @@ body {
     background-repeat: no-repeat;
     font-family: sans-serif;
     background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(197, 82, 82, 0.3);
 }
+
 
 header {
     
@@ -20,10 +18,6 @@ header {
     
 }
 .portada-background-image {
-    /*background-image: url('img/Portada.jpg'); 
-    background-size: cover; 
-    background-position: 65% 35%; 
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0) ;*/
     padding: 10px;
     height: 200px;
 
@@ -32,12 +26,12 @@ header {
     
     width: 125px; 
     height: 125px; 
-    border-radius: 50%; /* Convierte el contenedor en un círculo */
+    border-radius: 50%; 
     display: flex;
     justify-content: center; 
     align-items: center; 
     background-color: white; 
-    overflow: hidden; /* Oculta cualquier parte de la imagen que esté fuera del círculo */
+    overflow: hidden; 
     margin-right: 20px; 
     box-shadow: 0 0 20px rgba(255, 0, 255, 0.8); 
 }
@@ -45,7 +39,7 @@ header {
 .logo img {
     width: 100%; 
     height: 100%; 
-    object-fit: cover; /* Escala la imagen para que se ajuste dentro del contenedor manteniendo su relación de aspecto */
+    object-fit: cover; 
     border-radius: 50%; 
 }
 
@@ -66,15 +60,13 @@ header {
 
 #botonera ul li:hover{
     transform: scale(1.1, 1.3);
-    /*background-color: aqua;
-    border-radius: 20px;*/
 }
 
 .link {
     display: block;
-    color: blue;
-    /*border: 1px solid white;*/
+    color: white;
     text-decoration: none;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
     font-weight: bold;
     font-size: larger;
     height: 30px;
@@ -82,14 +74,14 @@ header {
     line-height: 30px;
     border-radius: 2px;
     width: 150px;
-    margin-right: 10px; /* Ajusta el margen derecho de los botones */
-    position: relative; /* Añadido para posicionar los pseudo-elementos */
+    margin-right: 10px; 
+    position: relative; 
 }
 
 .link::before, 
 .link::after {
     content: "";
-    position: absolute; /* Posiciona los pseudo-elementos relativos al enlace */
+    position: absolute; 
     width: 100%;
     height: 2px;
     background: #fff;
@@ -111,37 +103,32 @@ header {
 
 .link:hover::before,
 .link:hover::after {
-    /*background-color: blue;*/
     transform: scaleX(1);
 
 }
 
 .home {
-
-    /*background-image: url('img/home2.jpg'); 
-    background-size: cover; 
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.75) ;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative; 
     max-width: 100%; 
     height: 100vh;
-  
 } 
 .text-overlay {
     position: relative;
     max-width: 80%; 
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     z-index: 1;
 }
 
 .text-overlay h3 {
     font-size: 4vw; 
     margin-bottom: 20px;
-    color: aqua;
-    text-decoration: underline;/*aca para cambiar el color*/
+    color: rgb(181, 141, 247);
+    text-decoration: underline;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 .text-overlay p {
@@ -149,16 +136,11 @@ header {
     line-height: 1.2;
 }
 footer {
-    /* background-image: url(img/home.jpg);
-    background-size: cover;
-    background-position: center;*/
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: aqua;
-    
- 
 }
 div i {
     color: white;
@@ -169,11 +151,12 @@ div i {
 }
 
 h1 {
-    color:black;
+    color:white;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5)
 }
 video {
     position: fixed;
@@ -200,12 +183,12 @@ video {
     margin-bottom: 20px;
 }
 label {
-    color: black;
+    color: white;
     display: block;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 5px;
-    text-decoration: underline;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5)
 }
 
 input[type="email"],
